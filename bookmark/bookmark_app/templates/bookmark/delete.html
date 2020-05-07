@@ -1,0 +1,11 @@
+{% include 'bookmark/main.html' %}
+
+<p><b>{{bookmark}}</b> 삭제하시겠습니까?</p>
+
+<form method="POST">
+    {% csrf_token %}
+<button>예</button>
+    </form>
+<a href="/">
+<button>아니오</button>
+</a>

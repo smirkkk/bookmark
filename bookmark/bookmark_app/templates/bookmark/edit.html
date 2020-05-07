@@ -1,0 +1,8 @@
+{% include 'bookmark/main.html' %}
+
+<form method="POST">
+    {% csrf_token %}
+    <input name="title" value="{{link.title}}" placeholder="타이틀">
+    <input name="url" value="{{link.url}}" placeholder="url (http 붙여서)">
+    <input type="submit">
+</form>
